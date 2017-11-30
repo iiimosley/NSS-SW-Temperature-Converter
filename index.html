@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temp Converter</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700" rel="stylesheet">
+</head>
+<body>
+    <h1>Tempurature Converter: Celcius &#x3c;&#x3e; Farhenheit</h1>
+    <div id="converter">
+        <input type="number" id="numInput">
+        <br>
+        <section>Convert to:</section>
+        <div class="celcius">
+            <input id="celcius" type="radio" name="temp" value="degree" onlclick="clickEvent"><label for="celcius">Celcius</label>
+        </div>
+        <div class="farhenheit">
+            <input id="farhenheit" type="radio" name="temp" value="degree" onlclick="clickEvent"><label for="farhenheit">Farhenheit</label>
+        </div>
+        <div id="newTemp"></div>
+        <button id="convert">Convert</button>    
+        <button id="clear">Clear Tempurature</button>
+    </div>
+    <script src="converter.js"></script>
+</body>
+</html>
